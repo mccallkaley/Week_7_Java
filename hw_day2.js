@@ -20,7 +20,14 @@ let person3 = {
 
 //get dicts in keys (fave foods)
 
-console.log(Object.values(person3))
+//console.log(Object.values(person3))
+
+for (let i = 0; i < Object.keys(person3).length; i++) {
+    if (Array.isArray(Object.values(person3)[i])) {
+    console.log(Object.values(person3)[i])
+    console.log(Object.keys(person3)[i])
+    }
+}
 
 
 //=======Exercise #2=========//
